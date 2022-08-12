@@ -5,7 +5,7 @@
                 <div class="input-field">
                     <input #searchinput (keyup)="search(searchinput.value)" placeholder="Rechercher un pokémon" name="" id="">
                     <div class="collection">
-                        <a *ngFor="let pokemon of pokemon$ |async" href="" 
+                        <a *ngFor="let pokemon of pokemon$ |async"  
                         (click)="goTodetail(pokemon)" class="collection-item">{{pokemon.name}}</a>
                     </div>
                 </div>
